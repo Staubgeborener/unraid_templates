@@ -1,0 +1,34 @@
+<?xml version="1.0"?>
+<Container version="2">
+  <Name>boxarr</Name>
+  <Repository>ghcr.io/iongpt/boxarr:latest</Repository>
+  <Registry>https://github.com/iongpt/boxarr/pkgs/container/boxarr</Registry>
+  <Branch>
+      <Tag>latest</Tag>
+      <TagDescription>Latest stable release</TagDescription>
+  </Branch>
+  <Network>bridge</Network>
+  <Privileged>false</Privileged>
+  <Support>>https://github.com/iongpt/boxarr/issues</Support>
+  <Project>https://github.com/iongpt/boxarr</Project>
+  <Overview>
+      Boxarr is an automated box office tracking application that integrates with Radarr to monitor, add, and manage the latest theatrical releases. It provides a beautiful dashboard showing the current box office top 10, their status in your Radarr library, and allows quality profile management. 
+  </Overview>
+  <Category>MediaServer Tools: Productivity: Other: Status:Stable</Category>
+  <WebUI>http://[IP]:[PORT:8888]</WebUI>
+  <TemplateURL>https://github.com/Staubgeborener/unraid_templates/boxarr.xml</TemplateURL>
+  <Icon/>
+  <Maintainer>
+      <WebPage>https://github.com/iongpt</WebPage>
+  </Maintainer>
+  <ExtraParams/>
+  <PostArgs/>
+  <CPUset/>
+  <DateInstalled>1756650885</DateInstalled>
+  <DonateText/>
+  <DonateLink/>
+  <Requires/>
+  <Config Name="Host path for /config" Target="/config" Default="/mnt/user/appdata/boxarr" Mode="rw" Description="" Type="Path" Display="always" Required="false" Mask="false">/mnt/cache/appdata/boxarr</Config>
+  <Config Name="Host port for 8888" Target="8888" Default="8888" Mode="tcp" Description="" Type="Port" Display="always" Required="false" Mask="false">8888</Config>
+  <TailscaleStateDir/>
+</Container>
